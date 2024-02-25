@@ -1,0 +1,40 @@
+\documentclass[titlepage]{article}
+\usepackage[bottom=3cm, right=3cm, left=3cm, top=3cm]{geometry}
+\usepackage {graphicx}
+\usepackage{caption}
+%opening
+\title{%
+	Practical Machine Learning\\
+	
+	\vspace*{2em}
+	\LARGE Exercise 3 \\
+	Spring 2024}
+\author{Lisa Stafford}
+\date{February 20, 2024}
+
+\begin{document}
+	\setlength\parindent{0pt}
+	
+	\maketitle
+	
+	\section*{Abstract}
+	Model selection is a common problem for machine learning architects where one selects the model that does the best job of generalizing and most appropriate for the given problem.  Those selecting the model should choose the best balance between under- and over-fitting.  When selecting a model, one must examine the value of different predictive methods to identify the one that best fits observable data.  There are two main factors when choosing the most appropriate model in machine learning.  One is the reason for choosing it, and the other is the model's performance.  Reasons for choosing a model should be based on the available data set, and the problem task.
+	
+	\section*{Introduction}
+	In order to learn and determine which models are most effective, we used a wine data set obtained from the University of Irvine \cite{dataset}. Training is performed on each subset of red and white wine within the data set.  Several models are trained implementing libraries directly from scikitlearn \cite{scikitlearn} and then training and testing performance scores for each model and wine subsets are taken.  Model selection determinations can then be made based on the performance scores.  
+	
+	\section*{Dataset Description}
+	Our Wine Dataset is actually comprised of two different wine subsets of data.  While both are related to variants of \cite{dataset2} "Portuguese Vhinho Verde wine" the data is actually split in two subsets - one red subset and one white subset.  Each subset contains 11 features and 1 label for wine quality.   All features are continuous float values.  Within the model the "wine quality" labels are recognized as discrete categorical integer values ranging from 3 to 9 for the white wines, and 3 and 8 for the red wines.  White wine contains a total of 4898 total data instances, while red wine has a total of 1598 data instances as shown in the following table images. Figure 1 (left) displays feature values, statistics, and total instances for white wine, while Figure 1 (right) displays feature values, statistics and total instances available for red wine.which consists of two subsets of data.  One for white wine, and one for red wine. 
+	
+	\section*{Experimental Setup}
+	\section*{Results}
+	
+	
+\begin{thebibliography}{9}
+	\bibitem{dataset1} A. Asuncion, D. Newman, UCI Machine Learning Repository, University of California, Irvine  (2007).  Obtained from https://archive-beta.ics.uci.edu/dataset/186/wine+quality. 
+	\bibitem{numpyisnan} C. Harris, K. Millman, S. van der Walt,  Array programming with NumPy. Nature 585, 357–362 (2020). DOI: 10.1038/s41586-020-2649-2.  https://numpy.org/doc/stable/reference/generated/numpy.isnan.html
+	\bibitem{seaborn} M. Waskom, (2021). seaborn: statistical data visualization. Journal of Open Source Software, 6(60), 3021, https://doi.org/10.21105/joss.03021.
+	\bibitem{scikitlearn}Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011. 
+\end{thebibliography}
+
+\end{document}
