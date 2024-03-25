@@ -43,6 +43,7 @@
 		A decision was made to evaluate a number of popular Classification ML Models/Algorithms, since it was hard to be sure which would be more effective.  The machine learning algorithms that fit best with this particular dataset are as follows and therefore we will utilize these listed in our initial ML model selection:
 	
 	\begin{enumerate}
+		\item Random Forest Classifier
 		\item Linear Support Vector Machine
 		\item Classic Support Vector Machine
 		\item K-Neighbors Classifier
@@ -50,7 +51,11 @@
 		\item Neural Network using MultiLayer Perceptron
 	\end{enumerate}
 	
-		While neural networks are not listed in the above decision chart, they are frequently used when training ML models due to their flexibility for use in a wide variety of ML problems, on different data types, and generally high level of performance. Therefore, they were included in this exercise.  Training is performed on each subset of red and white wine within the data set.  Several models are trained implementing libraries directly from scikitlearn \cite{scikitlearn}.  While we have a number of different model options, we specify limited hyper-parameters for each model, and instead frequently proceed with training using the default hyper-parameters specified through scikitlearn in most cases.  Next, training and testing performance scores for each model and wine subsets are taken.  Model selection determinations and evaluation is then to be made based on ten individual and unrelated train and test runs to get performance scores of each model.  Performance values are averaged after 10 independent model train/test runs.  
+		While neural networks are not listed in the above decision chart, they are frequently used when training ML models due to their flexibility for use in a wide variety of ML problems, on different data types, and generally high level of performance. Therefore, they were included in this exercise.  
+		
+		Training is performed on each subset of red and white wine within the data set and data is parsed into 80\% for training, and 20\% for testing.  Several models are trained implementing libraries directly from scikitlearn \cite{scikitlearn}.  While we have a number of different model options, we specify limited hyper-parameters for each model, and instead frequently proceed with training using the default hyper-parameters specified through scikitlearn in most cases.  
+		
+		Next, training and testing performance scores for each model and wine subsets are taken.  Model selection determinations and evaluation is then to be made based on ten individual and unrelated train and test runs to get performance scores of each model.  Performance values are averaged after 10 independent model train/test runs.  
 	 
 	\section*{Results}
 	Machine learning performance results were never very highly performative, but resulted as follows.  The highest machine learning test performance was found to be different models, depending on the wine subset.  The first graphic displays the results of each model before performing standard scaling and log scaling on specific data features.  The following shows performance of each model after performing data scaling.  As is notable, data scaling has a significant effect on certain ML model performance.  
@@ -70,7 +75,17 @@ With the above changes to performance happening after certain methods of scaling
 \end{center}
 
 Certain models are more performant when data is scaled in specific ways but all models perform best when using some form of data scaling.  Random Forest appears to be less sensitive to scaling but performed best with standard scaling.  Linear SVC performs best with standard scaling on average.  Polynomial SVC always performed best with standard scaling.  KNN performed well regardless of scaling but did best with a log scaler on average.  SGD performed best with a combination scaler, and MLP performed best with standard scaling.  Average performance was best with the Random Forest method across all data scaling but KNN was a close second on all data. 
+
+The last process within training validation was to re-perform all model training using kfold cross validation on the sets into 5 partitions, resulting in an 80\% training and 20\% testing datasets.  Results were very similar to those from previous runs though more "averaged out".  
+
+Best Results for these models was similar in performance to the more "average performance" results from the prior runs: 
+
+\begin{center}
+	\includegraphics[width=.8\textwidth]{img/kfoldresults.png}	
+\end{center}
 	
+The one thing I could more easily take away from the runs with kfold cross validation is that the data scale methods used in these runs are likely going to be more consistently the best data scaling to result in the best performance for the underlying model.  
+
 \begin{thebibliography}{9}
 	\bibitem{dataset} A. Asuncion, D. Newman, UCI Machine Learning Repository, University of California, Irvine  (2007).  Obtained from https://archive-beta.ics.uci.edu/dataset/186/wine+quality. 
 	\bibitem{numpyisnan} C. Harris, K. Millman, S. van der Walt,  Array programming with NumPy. Nature 585, 357–362 (2020). DOI: 10.1038/s41586-020-2649-2.  https://numpy.org/doc/stable/reference/generated/numpy.isnan.html
