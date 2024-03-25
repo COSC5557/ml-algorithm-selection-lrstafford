@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.16)  24 FEB 2024 18:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.16)  24 MAR 2024 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -178,12 +178,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Citation `dataset' on page 1 undefined on input line 24.
-
-
-LaTeX Warning: Citation `dataset' on page 1 undefined on input line 28.
-
 <img/white.png, id=8, 614.295pt x 378.41376pt>
 File: img/white.png Graphic file (type png)
 <use img/white.png>
@@ -195,54 +189,65 @@ File: img/red.png Graphic file (type png)
 Package pdftex.def Info: img/red.png  used on input line 31.
 (pdftex.def)             Requested size: 199.60895pt x 125.60501pt.
 
-LaTeX Warning: Citation `dataset' on page 1 undefined on input line 33.
-
 [1 <./img/white.png> <./img/red.png>]
-<img/sklearncheatsheet.png, id=19, 1033.8625pt x 650.43pt>
+<img/sklearncheatsheet.png, id=18, 1033.8625pt x 650.43pt>
 File: img/sklearncheatsheet.png Graphic file (type png)
 <use img/sklearncheatsheet.png>
 Package pdftex.def Info: img/sklearncheatsheet.png  used on input line 41.
 (pdftex.def)             Requested size: 421.3982pt x 265.10991pt.
  [2 <./img/sklearncheatsheet.png>]
-<img/results.png, id=24, 655.44875pt x 181.67876pt>
+<img/results.png, id=23, 655.44875pt x 181.67876pt>
 File: img/results.png Graphic file (type png)
 <use img/results.png>
-Package pdftex.def Info: img/results.png  used on input line 58.
-(pdftex.def)             Requested size: 221.78923pt x 61.47609pt.
+Package pdftex.def Info: img/results.png  used on input line 59.
+(pdftex.def)             Requested size: 354.86412pt x 98.36287pt.
+<img/postscaleresults2.png, id=24, 651.43375pt x 170.6375pt>
+File: img/postscaleresults2.png Graphic file (type png)
+<use img/postscaleresults2.png>
+Package pdftex.def Info: img/postscaleresults2.png  used on input line 61.
+(pdftex.def)             Requested size: 354.86412pt x 92.95523pt.
+<img/bestscores.png, id=25, 506.89375pt x 354.32375pt>
+File: img/bestscores.png Graphic file (type png)
+<use img/bestscores.png>
+Package pdftex.def Info: img/bestscores.png  used on input line 69.
+(pdftex.def)             Requested size: 177.42868pt x 124.02057pt.
+<img/avescores.png, id=26, 520.94624pt x 357.335pt>
+File: img/avescores.png Graphic file (type png)
+<use img/avescores.png>
+Package pdftex.def Info: img/avescores.png  used on input line 69.
+(pdftex.def)             Requested size: 177.42868pt x 121.70493pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+[3 <./img/results.png> <./img/postscaleresults2.png> <./img/bestscores.png> <./
+img/avescores.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 []\OT1/cmr/m/n/10 C. Har-ris, K. Mill-man, S. van der Walt, Ar-ray pro-gram-min
 g with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 \OT1/cmr/m/n/10 NumPy. Na-ture 585, 357{362 (2020). DOI: 10.1038/s41586-020-264
 9-2.
  []
 
-[3 <./img/results.png>] (./Exercise3.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[4] (./Exercise3.aux) ) 
 Here is how much of TeX's memory you used:
- 3244 strings out of 476025
- 57083 string characters out of 5790017
+ 3263 strings out of 476025
+ 57562 string characters out of 5790017
  1857388 words of memory out of 5000000
- 23711 multiletter control sequences out of 15000+600000
- 516235 words of font info for 45 fonts, out of 8000000 for 9000
+ 23728 multiletter control sequences out of 15000+600000
+ 515927 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,6n,63p,1071b,184s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on Exercise3.pdf (4 pages, 1055873 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr17.pfb>
+Output written on Exercise3.pdf (5 pages, 1266726 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
